@@ -136,3 +136,20 @@ p.no-margin {
 .btn-red:hover {
     background-color: #d73747; 
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Make the sidebar full-width on smaller screens */
+        height: auto; /* Adjust height to fit content */
+        position: relative; /* Remove fixed position */
+    }
+
+    .content {
+        margin-left: 0; /* Reset margin for smaller screens */
+        padding-top: 20px; /* Adjust padding to ensure there's space for the sidebar */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
