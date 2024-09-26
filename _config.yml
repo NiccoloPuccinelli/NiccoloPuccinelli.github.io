@@ -63,6 +63,6 @@ kramdown:
   syntax_highlighter: rouge
 
 collections:
-  - publications
-  - news
+  - papers
+  - research
   - teaching

@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary">
-  <div class="container-fluid mx-5">
+  <div class="container-fluid mx-2">
     <a class="navbar-brand" href="index.html">
       <img src="images/icon.png" alt="Niccolò Puccinelli's icon" width="50" height="50">
     </a>
@@ -8,16 +8,18 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-      <div class="navbar-nav mx-auto">
+      <div class="navbar-nav mx-auto" style="font-size: 1.25rem;"> <!-- Adjust the font-size here -->
         <a href="/" {% if page.url=='/' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {%
-          endif %}>About</a>
-        <a href="publications.html" {% if page.url=='/publications.html' %} class="nav-link active" aria-current="page"
-          {% else %} class="nav-link" {% endif %}>Publications</a>
+          endif %}>Home</a>
+          <a href="research.html" {% if page.url=='/research.html' %} class="nav-link active" aria-current="page"
+            {% else %} class="nav-link" {% endif %}>Research</a>
+        <a href="papers.html" {% if page.url=='/papers.html' %} class="nav-link active" aria-current="page"
+          {% else %} class="nav-link" {% endif %}>Papers</a>
         <a href="teaching.html" {% if page.url=='/teaching.html' %} class="nav-link active" aria-current="page" {% else
           %} class="nav-link" {% endif %}>Teaching</a>
       </div>
       <!-- Right-aligned social media links -->
-      <div class="navbar-nav ms-auto align-items-center">
+      <div class="navbar-nav ms-auto align-items-center" style="font-size: 1.25rem;"> <!-- Adjust the font-size here -->
         <a class="nav-link" href="mailto:niccolo.puccinelli@usi.ch"><i class="fa-regular fa-envelope"></i></a>
         <a class="nav-link" href="https://scholar.google.com/citations?user=FFLWUzoAAAAJ&hl=en" target="_blank"><i
             class="fa-brands fa-google-scholar"></i></a>

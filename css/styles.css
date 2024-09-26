@@ -7,7 +7,7 @@
 body {
     font-family: "Fira Sans", sans-serif;
     line-height: 1.6;
-    background-color: #fffdd0;
+    background-color: #eff0fc;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -32,7 +32,6 @@ footer {
     box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom style for active events on navigation bar. */
 .nav-link.active {
     font-weight: bold;
     color: #29379d !important;
@@ -62,7 +61,7 @@ p.no-margin {
 }
 
 .publisher-badge {
-    background-color: #29379d;
+    background-color: #3e4aa1;
     min-width: 5rem;
 }
 
@@ -83,4 +82,14 @@ p.no-margin {
     --bs-btn-padding-y: .1rem;
     --bs-btn-padding-x: .5rem;
     font-size: .9rem;
+}
+
+.btn-red {
+    background-color: #d73747; 
+    color: white;
+    border: none;
+}
+
+.btn-red:hover {
+    background-color: #d73747; 
 }
