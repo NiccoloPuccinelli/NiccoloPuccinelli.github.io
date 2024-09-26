@@ -1,37 +1,37 @@
 ---
 layout: default
-title: "Niccolò Puccinelli's papers"
+title: "Niccolò Puccinelli's publications"
 years: ["2021", "2023", "2024"]
 ---
 <main>
     <div class="container custom-main">
-        <h2>Papers</h2>
+        <h2>Publications</h2>
 
         {% for year in page.years %}
-        {% for papers in site.papers reversed %}
+        {% for publication in site.publications reversed %}
 
-        {% if year == paper.year %}
+        {% if year == publication.year %}
 
         <div class="row py-3">
             <div class="col-1 publisher-width">
-                <span class="badge text-white publisher-badge fs-6 shadow">{{ paper.short_name }}</span>
+                <span class="badge text-white publisher-badge fs-6 shadow">{{ publication.short_name }}</span>
             </div>
 
             <div class="col">
                 <div class="row mb-1">
-                    <p class="fira-sans-medium no-margin">{{ paper.title }}</p>
-                    <p class="no-margin" style="font-size: 0.9rem">{{ paper.authors }}</p>
-                    <p class="no-margin" style="font-size: 0.9rem"><em>{{ paper.long_name }}</em></p>
-                    {% if paper.media_names and paper.media_links %}
+                    <p class="fira-sans-medium no-margin">{{ publication.title }}</p>
+                    <p class="no-margin" style="font-size: 0.9rem">{{ publication.authors }}</p>
+                    <p class="no-margin" style="font-size: 0.9rem"><em>{{ publication.long_name }}</em></p>
+                    {% if publication.media_names and publication.media_links %}
                     <p class="no-margin" style="font-size: 0.9rem">🚀 This paper received widespread media attention on
-                        {% for media_name in paper.media_names %}
+                        {% for media_name in publication.media_names %}
                         {% if forloop.last %}
                         and
                         {% endif %}
                         {% unless forloop.first or forloop.last %}
                         ,
                         {% endunless %}
-                        <a href="{{ paper.media_links[forloop.index0] }}" class="custom-link" target="_blank"
+                        <a href="{{ publication.media_links[forloop.index0] }}" class="custom-link" target="_blank"
                             rel="noopener noreferrer">{{ media_name }}</a>
                         {% endfor %}
                     </p>
@@ -39,26 +39,26 @@ years: ["2021", "2023", "2024"]
                 </div>
 
                 <button class="btn btn-red pub-button me-2 shadow" type="button"
-                    onclick="openPDF('{{ paper.doi }}')">
+                    onclick="openPDF('{{ publication.doi }}')">
                     DOI
                 </button>
 
                 <button class="btn btn-red pub-button me-2 shadow" type="button"
-                    onclick="openPDF('{{ paper.pdf }}')">
+                    onclick="openPDF('{{ publication.pdf }}')">
                     PDF
                 </button>
 
-                {% if paper.artifact %}
+                {% if publication.artifact %}
 
                 <button class="btn btn-red pub-button me-2 shadow" type="button"
-                    onclick="openPDF('{{ paper.artifact }}')">
+                    onclick="openPDF('{{ publication.artifact }}')">
                     Artifact
                 </button>
 
                 {% endif %}
 
                 <button class="btn btn-red pub-button me-2 shadow" type="button"
-                    onclick="openPDF('{{ paper.bibtex }}')">
+                    onclick="openPDF('{{ publication.bibtex }}')">
                     BibTex
                 </button>
 
@@ -74,7 +74,7 @@ years: ["2021", "2023", "2024"]
 
         {% endfor %}
 
-        <p xmlns:cc="http://creativecommons.org/ns#">All available papers are licensed under <a
+        <p xmlns:cc="http://creativecommons.org/ns#">All available publications are licensed under <a
                 href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" class="custom-link"
                 rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img
                     style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
