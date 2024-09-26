@@ -37,6 +37,10 @@ footer {
     color: #29379d !important;
 }
 
+.navbar-nav .nav-link i {
+    color: #29379d; 
+}
+
 .nav-link i {
     font-size: 2rem;
 }

@@ -1,34 +1,29 @@
 <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary">
-  <div class="container-fluid mx-2">
-    <a class="navbar-brand" href="index.html">
+  <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
+    
+    <!-- Brand icon on the left -->
+    <a class="navbar-brand" href="index.html" style="flex: 0 0 auto;">
       <img src="images/icon.png" alt="Niccolò Puccinelli's icon" width="50" height="50">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-      <div class="navbar-nav mx-auto" style="font-size: 1.25rem;"> <!-- Adjust the font-size here -->
-        <a href="/" {% if page.url=='/' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {%
-          endif %}>Home</a>
-          <a href="research.html" {% if page.url=='/research.html' %} class="nav-link active" aria-current="page"
-            {% else %} class="nav-link" {% endif %}>Research</a>
-        <a href="publications.html" {% if page.url=='/publications.html' %} class="nav-link active" aria-current="page"
-          {% else %} class="nav-link" {% endif %}>Publications</a>
-        <a href="teaching.html" {% if page.url=='/teaching.html' %} class="nav-link active" aria-current="page" {% else
-          %} class="nav-link" {% endif %}>Teaching</a>
+
+    <!-- Centered navbar links with absolute centering -->
+    <div class="navbar-collapse position-absolute w-100 justify-content-center">
+      <div class="navbar-nav text-center" style="font-size: 1.25rem;">
+        <a href="/" {% if page.url=='/' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>Home</a>
+        <a href="research.html" {% if page.url=='/research.html' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>Research</a>
+        <a href="publications.html" {% if page.url=='/publications.html' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>Publications</a>
+        <a href="teaching.html" {% if page.url=='/teaching.html' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>Teaching</a>
+        <a href="contacts.html" {% if page.url=='/contacts.html' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>Contacts</a>
       </div>
-      <!-- Right-aligned social media links -->
-      <div class="navbar-nav ms-auto align-items-center" style="font-size: 1.25rem;"> <!-- Adjust the font-size here -->
-        <a class="nav-link" href="mailto:niccolo.puccinelli@usi.ch"><i class="fa-regular fa-envelope"></i></a>
-        <a class="nav-link" href="https://scholar.google.com/citations?user=FFLWUzoAAAAJ&hl=en" target="_blank"><i
-            class="fa-brands fa-google-scholar"></i></a>
-        <a class="nav-link" href="https://github.com/NiccoloPuccinelli" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a class="nav-link" href="https://www.linkedin.com/in/niccol%C3%B2-puccinelli-b1ba2a232/" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a class="nav-link" href="https://orcid.org/0009-0006-6859-8012" target="_blank"><i
-            class="fa-brands fa-orcid"></i></a>
-      </div>
+    </div>
+
+    <!-- Right-aligned social media links -->
+    <div class="navbar-nav ms-auto align-items-center" style="flex: 0 0 auto; font-size: 1.25rem;">
+      <a class="nav-link" href="mailto:niccolo.puccinelli@usi.ch"><i class="fa-regular fa-envelope"></i></a>
+      <a class="nav-link" href="https://scholar.google.com/citations?user=FFLWUzoAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a>
+      <a class="nav-link" href="https://github.com/NiccoloPuccinelli" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a class="nav-link" href="https://www.linkedin.com/in/niccol%C3%B2-puccinelli-b1ba2a232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a class="nav-link" href="https://orcid.org/0009-0006-6859-8012" target="_blank"><i class="fa-brands fa-orcid"></i></a>
     </div>
   </div>
 </nav>
