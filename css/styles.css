@@ -34,7 +34,7 @@ footer {
 /* Custom style for active events on navigation bar. */
 .nav-link.active {
     font-weight: bold;
-    color: #7D3C98 !important;
+    color: #29379d !important;
 }
 
 .nav-link i {
@@ -43,7 +43,7 @@ footer {
 
 a.custom-link {
     text-decoration: none;
-    color: #8E44AD;
+    color: #29379d;
 }
 
 .about-text {
@@ -61,7 +61,7 @@ p.no-margin {
 }
 
 .publisher-badge {
-    background-color: #8E44AD;
+    background-color: #29379d;
     min-width: 5rem;
 }
 

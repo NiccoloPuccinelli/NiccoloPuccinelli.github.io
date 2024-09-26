@@ -1,0 +1,29 @@
+<nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary">
+  <div class="container-fluid mx-5">
+    <a class="navbar-brand" href="index.html">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto align-items-center">
+        <a href="/" {% if page.url=='/' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {%
+          endif %}>About</a>
+        <a href="publications.html" {% if page.url=='/publications.html' %} class="nav-link active" aria-current="page"
+          {% else %} class="nav-link" {% endif %}>Publications</a>
+        <a href="teaching.html" {% if page.url=='/teaching.html' %} class="nav-link active" aria-current="page" {% else
+          %} class="nav-link" {% endif %}>Teaching</a>
+        <a class="nav-link disabled" aria-disabled="true">===== Follow me on =====></a>
+        <a class="nav-link" href="mailto:niccolo.puccinelli@usi.ch"><i class="fa-regular fa-envelope"></i></a>
+        <a class="nav-link" href="https://scholar.google.com/citations?user=FFLWUzoAAAAJ&hl=en" target="_blank"><i
+            class="fa-brands fa-google-scholar"></i></a>
+        <a class="nav-link" href="https://github.com/NiccoloPuccinelli" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a class="nav-link" href="https://www.linkedin.com/in/niccol%C3%B2-puccinelli-b1ba2a232/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a class="nav-link" href="https://orcid.org/0009-0006-6859-8012" target="_blank"><i
+            class="fa-brands fa-orcid"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
