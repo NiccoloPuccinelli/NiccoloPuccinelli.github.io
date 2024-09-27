@@ -1,7 +1,7 @@
 ---
 date: "September 2024"
 course_name: "Experimentation & Evaluation"
-course_link: "https://search.usi.ch/it/corsi/35263696/experimentation-evaluation"
+course_link: "https://search.usi.ch/it/corsi/35270757/experimentation-evaluation"
 role: "Teaching Assistant"
 level: "Bachelor"
 instructor_name: "Gabriele Bavota"
