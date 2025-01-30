@@ -5,7 +5,7 @@ course_link: "https://search.usi.ch/it/corsi/35270750/software-atelier-4-softwar
 role: "Teaching Assistant"
 level: "Bachelor"
 instructor_name: "Andrea Mocci"
-instructor_link: "https://www.inf.usi.ch/faculty/bavota/"
+instructor_link: "https://andreamocci.gitlab.io/"
 academic_year: "2024-2025"
 semester: "Spring"
 ects: "9"
