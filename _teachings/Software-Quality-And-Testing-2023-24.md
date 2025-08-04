@@ -10,5 +10,5 @@ academic_year: "2023-2024"
 semester: "Spring"
 ects: "6"
 language: "English"
-evaluation: "Professor: 5/5, Students: 8.69/10"
+evaluation: "8.69/10"
 ---
