@@ -1,5 +1,5 @@
 ---
-date: "Fall 2025"
+date: "September 2025"
 course_name: "Software Atelier 1: Fundamentals of Informatics"
 role: "Teaching Assistant"
 level: "Bachelor"

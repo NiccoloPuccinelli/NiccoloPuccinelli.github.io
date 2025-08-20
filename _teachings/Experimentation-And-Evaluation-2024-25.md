@@ -1,5 +1,5 @@
 ---
-date: "Fall 2024"
+date: "September 2024"
 course_name: "Experimentation & Evaluation"
 role: "Teaching Assistant"
 level: "Bachelor"

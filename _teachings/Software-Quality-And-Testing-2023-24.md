@@ -1,5 +1,5 @@
 ---
-date: "Spring 2024"
+date: "February 2024"
 course_name: "Software Quality & Testing"
 role: "Teaching Assistant"
 level: "Master"
