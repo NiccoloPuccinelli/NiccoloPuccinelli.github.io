@@ -1,7 +1,6 @@
 ---
-date: "February 2024"
+date: "Spring 2024"
 course_name: "Software Quality & Testing"
-course_link: "https://search.usi.ch/en/courses/35268145/software-quality-testing"
 role: "Teaching Assistant"
 level: "Master"
 instructor_name: "Mauro Pezzè"

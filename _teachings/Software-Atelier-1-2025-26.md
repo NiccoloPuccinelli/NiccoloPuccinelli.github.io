@@ -1,13 +1,13 @@
 ---
-date: "Fall 2024"
-course_name: "Experimentation & Evaluation"
+date: "Fall 2025"
+course_name: "Software Atelier 1: Fundamentals of Informatics"
 role: "Teaching Assistant"
 level: "Bachelor"
 instructor_name: "Gabriele Bavota"
 instructor_link: "https://www.inf.usi.ch/faculty/bavota/"
-academic_year: "2024-2025"
+academic_year: "2025-2026"
 semester: "Fall"
-ects: "3"
+ects: "6"
 language: "English"
-evaluation: "9.20/10"
+evaluation: ""
 ---
