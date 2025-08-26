@@ -1,0 +1,68 @@
+---
+layout: default
+title: Niccolò Puccinelli
+---
+<main>
+    <div class="container text-center custom-main">
+        <div class="sedan-regular fs-1">Niccolò Puccinelli</div>
+        <div class="fs-5 mx-auto">
+            <p class="no-margin">East Campus, Office D2.18</p>
+            <p class="no-margin">Via la Santa 1, 6962 Lugano-Viganello</p>
+            <p class="no-margin">Switzerland &#x1f1e8;&#x1f1ed;</p>
+        </div>
+
+        <h2 class="text-start py-1">News</h2>
+
+        <div class="my-3 overflow-auto ps-3" style="max-height: 15rem;">
+            {% for item in site.news reversed %}
+            <div class="row mx-auto text-start py-2">
+                <div class="col-2 p-0 news-date-width">
+                    <span class="badge text-white news-badge fs-6 shadow">{{ item.date | date: "%b %Y" }}</span>
+                </div>
+                <div class="col">
+                    <p>{{ item.text }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <h2 class="text-start pt-5">Bio</h2>
+        <div class="col mx-auto my-3 about-text">
+            <p>
+                I am a PhD student in Informatics at the 
+                <a href="https://star.inf.usi.ch/#/home" class="custom-link" target="_blank"
+                    rel="noopener noreferrer">Software Testing and Analysis Research (STAR) group</a>,
+                    supervised by Prof.
+                <a href="https://www.inf.usi.ch/faculty/pezze/" class="custom-link" target="_blank"
+                    rel="noopener noreferrer">Mauro Pezz&egrave;</a>,
+                at
+                <a href="https://www.usi.ch/en" class="custom-link" target="_blank"
+                    rel="noopener noreferrer">Universit&agrave; della Svizzera italiana (USI)</a>
+                in Switzerland.
+            </p>
+
+            <p>
+                I obtained my Bachelor degree in Computer Science from the
+                <a href="https://di.unipi.it/en/" class="custom-link"
+                    target="_blank" rel="noopener noreferrer">University of Pisa</a> in 2021, when I successfully
+                defended my thesis titled 
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-85099-9_14" class="custom-link"
+                    target="_blank" rel="noopener noreferrer"><em>Benchmarking Reservoir and Recurrent Neural Networks for Human State and Activity Recognition</em></a>
+                under the supervision of Prof. Davide Bacciu, Prof. Claudio Gallicchio, Prof. Alessio Micheli and Daniele Di Sarli.
+                The work was presented at the International Work-Conference on Artificial Neural Networks (IWANN) 2021.
+            </p>
+
+            <p>
+                I obtained my Master degree in Data Science (summa cum laude) from the
+                <a href="https://en.unimib.it/graduate/data-science" class="custom-link"
+                    target="_blank" rel="noopener noreferrer">University of Milano-Bicocca</a> in 2023, when I successfully
+                defended my thesis titled 
+                <a href="https://ieeexplore.ieee.org/abstract/document/10375621" class="custom-link"
+                    target="_blank" rel="noopener noreferrer"><em>On the Use of Personalized Models for Blood Glucose Concentration Prediction</em></a>
+                under the supervision of Prof. Paolo Napoletano and Flavio Piccoli.
+                The work was presented at the IEEE 13th International Conference on Consumer Electronics (ICCE) - Berlin.
+            </p>
+
+        </div>
+    </div>
+</main>

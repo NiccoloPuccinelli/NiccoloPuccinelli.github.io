@@ -1,1 +1,3 @@
-# NiccoloPuccinelli.github.io
+# niccolopuccinelli.github.io
+
+Repo for my personal website.

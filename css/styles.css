@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #007bff;
+    text-align: center;
+}
+
+.nav-link i {
+    margin-right: 8px;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.contact-links {
+    margin-top: 40px;
+}
+
+.content {
+    margin-left: 260px; /* Adjust to fit the sidebar */
+    padding: 20px;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.6;
+    background-color: #eff0fc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    margin-bottom: 7rem;
+}
+
+footer {
+    color: #7B7D7D;
+    background-color: white;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 1.4rem;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #29379d !important;
+}
+
+a.custom-link {
+    text-decoration: none;
+    color: #29379d;
+}
+
+.about-text {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+p.no-margin {
+    margin: 0px;
+}
+
+.custom-main {
+    max-width: 50rem;
+    padding: 0 1.5rem;
+}
+
+.publisher-badge {
+    background-color: #3e4aa1;
+    min-width: 5rem;
+}
+
+.news-badge {
+    background-color: #27AE60;
+    min-width: 6rem;
+}
+
+.publisher-width {
+    min-width: 6rem;
+}
+
+.news-date-width {
+    min-width: 6rem;
+}
+
+.pub-button {
+    --bs-btn-padding-y: .1rem;
+    --bs-btn-padding-x: .5rem;
+    font-size: .9rem;
+}
+
+.btn-red {
+    background-color: #d73747; 
+    color: white;
+    border: none;
+}
+
+.btn-red:hover {
+    background-color: #d73747; 
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Make the sidebar full-width on smaller screens */
+        height: auto; /* Adjust height to fit content */
+        position: relative; /* Remove fixed position */
+    }
+
+    .content {
+        margin-left: 0; /* Reset margin for smaller screens */
+        padding-top: 20px; /* Adjust padding to ensure there's space for the sidebar */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}

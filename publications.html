@@ -1,0 +1,89 @@
+---
+layout: default
+title: "Niccolò Puccinelli's publications"
+years: ["2024", "2023", "2021"]
+---
+<main>
+    <div class="container custom-main">
+        <h2>Publications</h2>
+
+        {% for year in page.years %}
+        {% for publication in site.publications reversed %}
+
+        {% if year == publication.year %}
+
+        <div class="row py-3">
+            <div class="col-1 publisher-width">
+                <span class="badge text-white publisher-badge fs-6 shadow">{{ publication.short_name }}</span>
+            </div>
+
+            <div class="col">
+                <div class="row mb-1">
+                    <p class="fira-sans-medium no-margin">{{ publication.title }}</p>
+                    <p class="no-margin" style="font-size: 0.9rem">{{ publication.authors }}</p>
+                    <p class="no-margin" style="font-size: 0.9rem"><em>{{ publication.long_name }}</em></p>
+                    {% if publication.media_names and publication.media_links %}
+                    <p class="no-margin" style="font-size: 0.9rem">🚀 This paper received widespread media attention on
+                        {% for media_name in publication.media_names %}
+                        {% if forloop.last %}
+                        and
+                        {% endif %}
+                        {% unless forloop.first or forloop.last %}
+                        ,
+                        {% endunless %}
+                        <a href="{{ publication.media_links[forloop.index0] }}" class="custom-link" target="_blank"
+                            rel="noopener noreferrer">{{ media_name }}</a>
+                        {% endfor %}
+                    </p>
+                    {% endif %}
+                </div>
+
+                <button class="btn btn-red pub-button me-2 shadow" type="button"
+                    onclick="openPDF('{{ publication.doi }}')">
+                    DOI
+                </button>
+
+                {% if publication.pdf %}
+
+                <button class="btn btn-red pub-button me-2 shadow" type="button"
+                    onclick="openPDF('{{ publication.pdf }}')">
+                    PDF
+                </button>
+
+                {% endif %}
+
+                {% if publication.artifact %}
+
+                <button class="btn btn-red pub-button me-2 shadow" type="button"
+                    onclick="openPDF('{{ publication.artifact }}')">
+                    Artifact
+                </button>
+
+                {% endif %}
+
+                <button class="btn btn-red pub-button me-2 shadow" type="button"
+                    onclick="openPDF('{{ publication.bibtex }}')">
+                    BibTex
+                </button>
+
+            </div>
+        </div>
+
+        {% endif %}
+        {% endfor %}
+
+        <div class="col fs-2 text-end text-body-tertiary">{{ year }}</div>
+
+        <hr class="my-1" />
+
+        {% endfor %}
+
+        <p xmlns:cc="http://creativecommons.org/ns#">All available publications are licensed under <a
+                href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" class="custom-link"
+                rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+    </div>
+</main>
