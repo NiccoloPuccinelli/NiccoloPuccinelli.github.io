@@ -6,5 +6,5 @@ long_name: "ACM SIGSOFT Software Engineering Notes"
 pdf: "resources/pdf/Niccolò-Puccinelli-SENotes2024.pdf"
 bibtex: "resources/bibtex/Niccolò-Puccinelli-SENotes2024.bib"
 year: "2024"
-date: "03 Oct 2024"
+date: "03 October 2024"
 ---
