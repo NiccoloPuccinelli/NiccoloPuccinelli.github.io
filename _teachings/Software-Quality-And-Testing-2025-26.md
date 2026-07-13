@@ -9,5 +9,5 @@ academic_year: "2025-2026"
 semester: "Spring"
 ects: "6"
 language: "English"
-evaluation: ""
+evaluation: "8.42/10"
 ---
